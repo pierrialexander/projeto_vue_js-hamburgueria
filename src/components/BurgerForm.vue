@@ -2,7 +2,9 @@
   <div>
     <p>Componente de Mensagem</p>
     <div>
-      <form id="burger-form">
+      
+      <!--INICIO DO FORMULÁRIO-->
+      <form id="burger-form" @submit="createBurger">
         <div class="input-container">
           <label for="nome">Nome do Cliente</label>
           <input type="text" id="nome" v-model="nome" placeholder="Digite seu nome">
@@ -32,6 +34,8 @@
           <input type="submit" class="submit-btn" value="Criar meu burger!">
         </div>
       </form>
+      <!--FINAL DO FORMULÁRIO-->
+
     </div>
   </div>
 </template>
@@ -48,7 +52,6 @@ export default {
       pao: null,
       carne: null,
       opcionais: [],
-      status: "Solicitado",
       msg: null
     }
   },
@@ -61,6 +64,17 @@ export default {
       this.carnes = data.carnes
       this.opcionaisdata = data.opcionais
 
+    },
+    async createBurger(e) {
+      e.preventDefault()
+
+      const data = {
+        nome: this.nome,
+        carne: this.carne,
+        pao: this.pao,
+        opcionais: this.opcionais,
+        status: "Solicitado"
+      }
     }
   },
   mounted() {
