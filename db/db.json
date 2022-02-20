@@ -81,5 +81,40 @@
       "tipo": "Finalizado"
     }
   ],
-  "burgers": []
+  "burgers": [
+    {
+      "nome": "Nicolau",
+      "carne": "Maminha",
+      "pao": "3 Queijos",
+      "opcionais": [
+        "Cheddar",
+        "Tomate"
+      ],
+      "status": "Solicitado",
+      "id": 1
+    },
+    {
+      "nome": "Florência",
+      "carne": "Picanha",
+      "pao": "Integral",
+      "opcionais": [
+        "Pepino",
+        "Bacon"
+      ],
+      "status": "Solicitado",
+      "id": 2
+    },
+    {
+      "nome": "Python",
+      "carne": "Maminha",
+      "pao": "3 Queijos",
+      "opcionais": [
+        "Bacon",
+        "Cheddar",
+        "Tomate"
+      ],
+      "status": "Solicitado",
+      "id": 3
+    }
+  ]
 }

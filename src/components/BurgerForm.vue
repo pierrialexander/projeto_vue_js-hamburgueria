@@ -47,7 +47,7 @@ export default {
     return {
       paes: null,
       carnes: null,
-      opocionaisdata: null,
+      opcionaisdata: null,
       nome: null,
       pao: null,
       carne: null,
@@ -66,15 +66,38 @@ export default {
 
     },
     async createBurger(e) {
-      e.preventDefault()
+      e.preventDefault();
+      
 
       const data = {
         nome: this.nome,
         carne: this.carne,
         pao: this.pao,
-        opcionais: this.opcionais,
+        opcionais: Array.from(this.opcionais),
         status: "Solicitado"
       }
+     const dataJson = JSON.stringify(data);
+
+     const req = await fetch("http://localhost:3000/burgers", {
+       method: "POST",
+       headers: { "Content-Type": "application/json"},
+       body: dataJson
+     });
+
+     const res = await req.json()
+
+     
+     // colocar uma msg do sistema
+
+     
+     
+     // limpar os campos
+    this.nome = "";
+    this.carne = "";
+    this.pao = "";
+    this.opcionais = "";
+
+    
     }
   },
   mounted() {
