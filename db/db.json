@@ -85,36 +85,45 @@
     {
       "nome": "Nicolau",
       "carne": "Maminha",
-      "pao": "3 Queijos",
+      "pao": "Italiano Branco",
       "opcionais": [
         "Cheddar",
-        "Tomate"
+        "Bacon"
       ],
       "status": "Solicitado",
       "id": 1
     },
     {
-      "nome": "Florência",
-      "carne": "Picanha",
-      "pao": "Integral",
+      "nome": "Python",
+      "carne": "Alcatra",
+      "pao": "Italiano Branco",
       "opcionais": [
-        "Pepino",
-        "Bacon"
+        "Cheddar",
+        "Salame",
+        "Tomate"
       ],
       "status": "Solicitado",
       "id": 2
     },
     {
-      "nome": "Python",
-      "carne": "Maminha",
-      "pao": "3 Queijos",
+      "nome": "Maria",
+      "carne": "Picanha",
+      "pao": "Brioche",
       "opcionais": [
-        "Bacon",
-        "Cheddar",
-        "Tomate"
+        "Bacon"
       ],
       "status": "Solicitado",
       "id": 3
+    },
+    {
+      "nome": "Florência",
+      "carne": "Maminha",
+      "pao": "Integral",
+      "opcionais": [
+        "Tomate"
+      ],
+      "status": "Solicitado",
+      "id": 4
     }
   ]
 }
